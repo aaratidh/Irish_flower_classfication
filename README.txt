@@ -22,12 +22,22 @@ Step 5: Data prosessing:
         This is our dataset we have a range of values for example the one pf the sepal length is in 5.2 range where as another se tof petal width has value of 0.2.
         so, we need for scaling of the dataset for better accuracy. The accuracy is highly affected by the range of the data in the dataframe. Normalizaing the dataset 
 	into the same scale directly reduces the computational time for machine learning.Generally, the are two method for scaling of the data set one is standralization 
-	and another is normalization. I have used standardlization for scaling in the dataset.
+	and another is normalization. I have used sklearn standardlization for scaling the data. As the last columns species has the value in string form.
+	I use label encoder to convert into interger form. 
 
 Step 6: Spliting Traning and testing sets 
+	Sklearn test_train split function is used for splitiing the tranning and testing data. I used 30% of data for testing and remaining 70% for training of the data.
+	Before spliting the dataset into test and train form we seprated the fetaures and target value all the features were placed in the X variable and traget values is placed in Y 
+	variable.
+     
 
 Step 6: Classifying the dataset 
+	I have used Logistic model for the classification of the data. Logistic regression is very simple yet very powerful method for the machine learning.
+	On the other hand, skleran has speed up all the process using the machine learning process. All we need to do is to import the model and then train 
+	the model and predict the model.
 
 Step 7: Making conclusion 
         From scatter plot we can see that Iris-setosa had wider sepal than of the versicolor and virginica.
-        where as virginica  species has longer sepal length than remaning rest of them. The versicolor  species turn out to be of average of the both with and length. 
+        where as virginica  species has longer sepal length than remaning rest of them. The versicolor species turn out to be of average of the both with and length. 
+	The accuracy result turn out to be a quite high about 95%. This might be due to standarlization and logistic regression is also a very effective model for prediction.
+	I have used confusion matrix for display of the result which shows that 43 out of 45 data has been correctedly predicted. Only tow of them were false. For accuracy 43/45 = 95%   
